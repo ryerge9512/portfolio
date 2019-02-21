@@ -4,7 +4,7 @@
 
 
 
-.Title , .links {
+.Title {
 width: span;
 font-weight: bold;
 text-transform: uppercase;
@@ -13,7 +13,8 @@ font-family: 'Playfair Display', serif;
 }
 
 .links {
-
-  color: red;
+  
+text-align: center;
+color: red;
 
 }
