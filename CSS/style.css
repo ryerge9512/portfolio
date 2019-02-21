@@ -21,7 +21,7 @@ font-family: 'Playfair Display', serif;
 
 
 .nav {
-color: black;
+  
 background: #000;
 height: 50px;
   
@@ -41,7 +41,7 @@ padding: 0;
 
 .nav ul li {
 
-background: #fff;
+color: #fff;
 display: inline-block; 
 height: 80px;
 line-height: 80px;  
