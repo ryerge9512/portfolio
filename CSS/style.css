@@ -2,16 +2,10 @@
 /* CSS Source Code for Portfolio */
 /* 2/19/2018_COP 1500 */
 
-#Boxes {
 
-width: span;
-height: 70px;
-  
-
-}
 
 .Title .links {
-
+width: span;
 font-weight: bold;
 text-transform: uppercase;
 text-align: center;   
