@@ -16,21 +16,36 @@ font-weight: bold;
 text-transform: uppercase;
 text-align: center;   
 font-family: 'Playfair Display', serif;
+  
 }
+
 
 .nav {
 
 backgroud: #000;
 height: 50px;
   
-  
 }
+
 
 .nav ul {
 
-text-color: white;
 height: 80px;
 list-style: none;
 margin: 0 auto; 
 padding: 0;
+  
+}
+
+
+.nav ul li {
+  
+color: #fff;
+display: inline-block; 
+height: 80px;
+line-height: 80px; 
+list-style: none;
+padding: 0 10px;
+transition: background .5s
+  
 }
