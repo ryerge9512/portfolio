@@ -30,8 +30,7 @@ height: 50px;
 
 .nav ul {
 
-background-color: black;
-color: #000;  
+background-color: black;  
 height: 80px;
 list-style: none;
 margin: 0 auto; 
@@ -42,7 +41,6 @@ padding: 0;
 
 .nav ul li {
 
-color: white;
 background-color: black;
 display: inline-block; 
 height: 80px;
