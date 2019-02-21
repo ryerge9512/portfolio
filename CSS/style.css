@@ -15,7 +15,7 @@ height: 70px;
 font-weight: bold;
 text-transform: uppercase;
 text-align: center;   
-text-family: cursive;
+font-style: cursive;
 }
 
 .links {
