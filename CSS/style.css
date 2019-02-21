@@ -4,7 +4,7 @@
 
 
 
-.Title.links {
+.Title , .links {
 width: span;
 font-weight: bold;
 text-transform: uppercase;
