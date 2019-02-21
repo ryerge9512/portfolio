@@ -29,7 +29,8 @@ height: 50px;
 
 
 .nav ul {
-  
+
+background-color: black;
 color: #000;  
 height: 80px;
 list-style: none;
