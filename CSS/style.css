@@ -41,6 +41,7 @@ padding: 0;
 
 .nav ul li {
 
+font-color: white;
 background-color: black;
 color: #fff;
 display: inline-block; 
