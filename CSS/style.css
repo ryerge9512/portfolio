@@ -2,11 +2,16 @@
 /* CSS Source Code for Portfolio */
 /* 2/19/2018_COP 1500 */
 
+.Title {
+
+width: span;
+font-size: 100px;  
+
+}
 
 
 .Title, .nav {
   
-width: span;
 font-weight: bold;
 text-transform: uppercase;
 text-align: center;   
