@@ -30,6 +30,7 @@ height: 50px;
 
 .nav ul {
 
+background-color: black;  
 height: 80px;
 list-style: none;
 margin: 0 auto; 
