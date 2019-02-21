@@ -4,7 +4,7 @@
 
 
 
-.Title, .links {
+.Title, .nav {
 width: span;
 font-weight: bold;
 text-transform: uppercase;
@@ -12,4 +12,9 @@ text-align: center;
 font-family: 'Playfair Display', serif;
 }
 
+.nav {
+
+
+
+}
 
