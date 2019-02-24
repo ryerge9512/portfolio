@@ -1,61 +1,210 @@
-/* Ryan Yerge */
-/* CSS Source Code for Portfolio */
+/* Ryan Yerge */                                    
+/* CSS Source Code for Portfolio */                 /* Credit: fonts.google.com */
 /* 2/19/2018_COP 1500 */
 
-.Title {
-
-width: span;
-font-size: 80px;  
-
+html {
+    
+height: 100%;
+    
 }
 
+    .Title {
 
-.Title, .nav {
+        width: 100%;
+        font-size: 80px;  
+
+    }
+
+
+    .Title, .nav {
   
-font-weight: bold;
-text-transform: uppercase;
-text-align: center;   
-font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;   
+        font-family: 'Playfair Display', serif;
+ 
+    
+    }
+
+
+    .nav {
+    
+        position: sticky;                   /* Credit: "CSS position sticky" @ https://www.youtube.com/watch?v=pYegv7O21Lo */
+        top: 0;    
+        width: 100%;    
+        background-position: center;      
+        background: #000;
+        z-index: 100;
+            
+    }
+
+
+        .nav ul {
+
+                                                
+            background: #000;
+            height: 80px;
+            list-style: none;
+            margin: 0 auto; 
+            padding: 0;
   
+    }
+
+
+            .nav ul li {
+    
+                display: inline-block; 
+                height: 80px;
+                line-height: 80px;  
+                list-style: none;
+                padding: 0 10px;
+  
+        }
+
+                .nav ul li a {
+
+                    color: antiquewhite; 
+ 
+    
+            }
+
+
+    h2 {
+    
+        font-size: 50px; 
+    
+    }
+
+    p {
+
+        top: 50px;
+        margin: 30px;     
+        letter-spacing: 0.05em;     
+        font-size: 20px;    
+        font-family: 'Scheherazade', serif;
+        font-weight: 500; 
+        right: auto;    
+    }
+
+    .myphoto {
+
+        height: 75%;
+        width: 25%;    
+        border-radius: 50px;     
+        float: right;
+        z-index: 0;
+    
+    }
+
+    strong {
+
+        font-size: 50px;    
+    
+    }
+
+
+    .school p {
+
+        letter-spacing: 0.05em;     
+        font-size: 20px;    
+        font-family: 'Scheherazade', serif;
+        font-weight: 500;
+        margin: 15px;
+    
+    }
+
+    h3 {
+    
+        font-family: 'Scheherazade', serif;         
+        margin: 40px; 
+        font-size: 20px;    
+        text-align: center;    
+    }
+
+    .resume {
+    
+        font-family: 'Scheherazade', serif;         
+        margin: 40px; 
+        font-size: 20px;    
+   
+    
+    }
+
+    .caaimage {
+    
+        z-index: 0;     
+        display: block;
+        float: left;
+        border-radius: 25px;
+        margin: 10px;
+ 
+    }
+
+    .smart p {
+
+        top: 20px;    
+        bottom: 20px;      
+        font-weight: 600;  
+        text-align: center;
+    }
+
+    
+
+    #auto   {
+        
+        letter-spacing: 0.05em;     
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        color: forestgreen; 
+        font-family: 'Nanum Gothic Coding', monospace; 
+        font-size: 40px;
+        margin: 0px;
+           
+    } 
+
+   
+
+    .twodee  {
+        
+        z-index: 0;
+        width: 100%;  
+        margin: 0 auto; 
+        object-fit: contain;
+    }
+   
+    .threedee1 {
+    
+        
+        float: left;
+        margin: 10px; 
+        
+    }
+
+    .threedee2{
+        
+     float: right;
+     position: relative; 
+     width: 1000px;
+     margin: 10px;
+     
+    }
+
+    .threedee3 {
+    
+        height: 10%; 
+        margin: 0; 
+    
+    }
+
+    .render {
+    display: inline-block
+   
+    }
+
+    .civil p {
+    
+    display: inline-block; 
+    
 }
-
-
-.nav {
-  
-background: #000;
-height: 50px;
-  
-}
-
-
-.nav ul {
-
-background: #000;
-height: 80px;
-list-style: none;
-margin: 0 auto; 
-padding: 0;
-  
-}
-
-
-.nav ul li {
-
-color: #fff;
-display: inline-block; 
-height: 80px;
-line-height: 80px;  
-list-style: none;
-padding: 0 10px;
-  
-}
-
-
-
-#Home .container {
-
-position: relative;
-top: 50px;
-
-}
-
+          
