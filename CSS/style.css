@@ -1,6 +1,6 @@
 /* Ryan Yerge */                                    
 /* CSS Source Code for Portfolio */                 /* Credit: fonts.google.com */
-/* 2/19/2018_COP 1500 */
+/* 04/06/2019_COP 1500 */
 
 html {
     
@@ -8,11 +8,26 @@ height: 100%;
     
 }
 
+.icons {
+    
+   margin: 20px; 
+   float: right;
+   
+}
+
+
+
+.validate, .audio {
+    float: left;
+    margin: 20px;
+}
+
+
     .Title {
 
         width: 100%;
         font-size: 80px;  
-
+        display: inline-block; 
     }
 
 
@@ -67,6 +82,19 @@ height: 100%;
  
     
             }
+     
+.nav ul li a:hover {
+    
+    background-color: orangered;
+    color: ghostwhite;
+    border-style: solid;
+    border-radius: 100px;
+    
+    
+}
+
+
+
 
 
     h2 {
@@ -140,6 +168,7 @@ height: 100%;
  
     }
 
+
     .smart p {
 
         top: 20px;    
@@ -207,4 +236,5 @@ height: 100%;
     display: inline-block; 
     
 }
-          
+            
+    
