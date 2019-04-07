@@ -12,7 +12,7 @@ height: 100%;
     
    margin: 20px; 
    float: right;
-   
+   display: inline-block;
 }
 
 
@@ -20,6 +20,7 @@ height: 100%;
 .validate, .icons {
     float: left;
     margin: 20px;
+    display: inline-block;
 }
 
 
