@@ -1,6 +1,6 @@
 <!--Ryan Yerge-->                                           <!--Credits: https://www.codecademy.com/learn/learn-html-->
 <!--HTML Source Code for Portfolio Module-->                <!--https://www.codecademy.com/learn/learn-css-->
-<!--2/19/2019_COP 1500-->                                   <!--https://www.stackoverflow.com-->
+<!--04/06/2019_COP 1500-->                                   <!--https://www.stackoverflow.com-->
  
 <!DOCTYPE html>
 <html>
@@ -14,34 +14,135 @@
   </head>
   
   <body>
-    <div class="header">  
-      <h1 class="Title">Ryan Yerge</h1>
-        <p><a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"alt="Valid CSS!" /></a></p>
-      </div>
       
-<div class="nav">
-  <ul>
-    <li><a href="./index.html">Home</a></li>                                           <!--Bio, Resume, photo-->
-    <li><a href="./academic.html">Academic Excellence</a></li>                         <!--CAA Worshop: SMART plan-->
-    <li><a href="./projects.html">Projects</a></li>                                    <!--AutoCAD proj-->                     
-    <li><a href="https://linkedin.com/in/ryerge9512" target="_blank">LinkedIn</a></li>
-    <li><a href="https://fgcu.instructure.com/eportfolios/11539?view=preview" target="_blank">E-Portfolio</a></li>
-  </ul> 
+    <div class="icons">
+        <a href="https://facebook.com/ryan.yerge.7" target="_blank"><img style="border:0;width:88px;height:31px" src="photos.html/facebook.svg" alt="Facebook"/></a>
+        <a href="https://twitter.com/ryerge9512" target="_blank"><img style="border:0;width:88px;height:31px" src="photos.html/twitter.svg" alt="Twitter"/></a>
+        <a href="https://snapchat.com/add/asap_yerg" target="_blank"><img style="border:0;width:88px;height:31px" src="photos.html/snapchat.svg" alt="Snapchat"/></a>
+    </div>
+                <!--Credit: https://www.w3schools.com/html/html5_audio.asp-->
+    <div class="audio"><audio controls><source src="media.html/14%20-%20ASAP%20Rocky-Roll%20One%20Up%20Prod%20By%20DJ%20Burn%20One.mp3" type="audio/mpeg"></audio></div>  
+      
+    <div class="validate">  
+      <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"alt="Valid CSS!" /></a>
+    </div>
+      
+    <div class="header"> 
+      <h1 class="Title">Ryan Yerge</h1>
+    </div>
+      
+  <canvas id="canvas" style="border:1px solid #ffffff;">The browser you are using does not support canvas. Please install any necessary updates or change browsers.</canvas>
+    
+      <!--Credit: "Animating Using Canvas Element in HTML5 @ https://www.youtube.com/watch?v=NP-SSxWhUSM&feature=youtu.be*/-->
+  <script>
+      
+      var canvas = document.getElementById("canvas");
+      var c = canvas.getContext("2d");
+      var W = 1330; 
+      var H = 200;
+      canvas.width = W;
+      canvas.height = H;
+      
+      var equations = [];
+      
+      for (var i = 0; i < 10; i++)
+      {
+          
+        equations.push(new create_equation());  
+                    
+      }
+      
+      function create_equation()
+      {
+          
+        this.x = Math.random()*W;
+        this.y = Math.random()*H;
+        this.vx = Math.random()*20-10;
+        this.vy = Math.random()*20-10;  
+          
+      }
+      
+      var x = H;
+      var y = W;
+      
+      function draw()
+      {
+          
+          for(var t = 0; t < equations.length; t++)
+              {
+                  
+                  var e = equations[t];
+                  var texttheme = ["#efff19", "#ffbb1e", "#ff471e", "#7fff1e", "#1eff7c", "#d4d8d7", "#0cffbe", "#0c91ff", "#dd7aff", "#ff118c"];
+                  var textfont = ["Nanum Gothic Coding"];
+                  var size = (Math.random() * 100) + 10;
+                  c.font = "85px '"+textfont[t]+"'";
+                  c.lineWidth = 2;
+                  c.strokeStyle = texttheme[t];
+                  c.shadowColor = texttheme[t-1];
+                  c.shadowOffsetX = 0;
+                  c.shadowOffsetY = 0;
+                  c.shadowBlur = 25;
+                  c.fillStyle = texttheme[t+1];
+                  c.fillText("Welcome to my portfolio!", e.x, e.y);
+                  c.strokeText("Welcome to my portfolio!", e.x, e.y);
+                  
+                  
+                  e.x += e.vx;
+                  e.y += e.vy;
+                  
+                  if(e.x < -150) e.x = W+150;
+                  if(e.y < -150) e.y = H+150;
+                  if(e.x > W+150) e.x = -150;
+                  if(e.y > H+150) e.y = -150;
+                  
+              }
+          
+          
+      }
+      
+      function clearf () {
+          
+          c.clearRect(0, 0, canvas.width, canvas.height);
+      }
+      
+      setInterval(clearf, 50);
+      setInterval(draw, 50);
+      
+      
+  </script>
        
+<div class="nav"> 
+     <ul>
+       <li><a href="./index.html">Home</a></li>                                           <!--Bio, Resume, photo-->
+       <li><a href="./academic.html">Academic Excellence</a></li>                         <!--CAA Worshop: SMART plan-->
+       <li><a href="./projects.html">Projects</a></li>                                    <!--AutoCAD proj-->                     
+       <li><a href="https://linkedin.com/in/ryerge9512" target="_blank">LinkedIn</a></li>
+       <li><a href="https://fgcu.instructure.com/eportfolios/11539?view=preview" target="_blank">E-Portfolio</a></li>
+       <li><a href="../portfolio-master/media.html/CompSciEssay.pdf" target="_blank">Fields Report</a></li> 
+     </ul>
+    
+     
 </div>
    
    
    <div id="Home">
        <h2 class="bio">Bio</h2>
-         <img src="https://user-images.githubusercontent.com/47768094/53295285-ffba5f80-37c5-11e9-9fe2-cc4ad059d812.JPG" alt="Photo of Ryan Yerge" class="myphoto">
+         <img src="photos.html/selff.JPG" alt="Photo of Ryan Yerge" class="myphoto">
            <p><strong>T</strong>he day I decided to become a software engineer did not exactly happen the way I had pictured. All the pieces sort of fell together on their own, and it just took a moment of clarity to realize that my initial plans as an English major were not going to develop into a career I was truly passionate about. When I reflect on my upbringing in Maryland, my father was (now retired) a leading technician for Amtrak. He introduced me to “breadboarding” at an early age, which is a process for building and troubleshooting circuit prototypes without the use of solder. All the delicate, yet powerful electronic components of different shapes, sizes, and colors intrigued me as to how their functionality influenced the inner workings of a desired circuit. My father wasted no time in purchasing me my very own starter “breadboard” with introductory projects that immersed me into a world in which we both could work side-by-side. Eventually when I was older, he purchased me my own microcontroller, “Arduino,” to learn the fundamentals of programming alongside with some hardware. It is no surprise to me now when I reflect upon where my roots stem from that ultimately led me to the decision to abandon my original path as an English major. Today, I am pursuing a software engineering degree at Florida Gulf Coast University where I plan to focus on renewable energy.</p>
            <p><strong>A</strong>fter hurricane Irma wrought through SWFL on September 10, 2017, I was invited to be a part of a talented team at Kelly Roofing where we instantaneously responded to the catastrophic damage with the help of Microsoft’s dynamic CRM software and RoofSnap applications. While maintaining a fulltime school schedule, I successfully managed 150 client’s claims and was still able to meet, if not exceed, a monthly revenue goal of $1M. In addition to this invaluable experience, my coursework has exposed me to programming languages like HTML/CSS and C; as well as other computational tools like Excel and MATLAB.</p>
          
   </div>   
-         
+             
+      
+      <!--Credit: https://www.w3schools.com/html/html_youtube.asp-->
+<div class="video"><center><video src="./media.html/Kelly%20Roofing%20Microsoft%20Dynamics%20CRM.mp4" height="315" width="560" controls>Video not supported</video></center></div>      
        
+      
+      
 <h3>Please see my applicable experience and translatable skills below:</h3>
  
+      
+      
       <!--Begin html code exported from Microsoft Word .doc-->
 <div class="resume">       
            <html xmlns:v="urn:schemas-microsoft-com:vml"
@@ -1573,5 +1674,10 @@ style='font-size:12.0pt;font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></
      
    
     
-    </body>  
+    </body>
+    
+<div class="credit"><center>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 		    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 		    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></center></div>
+     
+
 </html>  
+ 
