@@ -8,7 +8,7 @@ height: 100%;
     
 }
 
-.icons {
+.audio {
     
    margin: 20px; 
    float: right;
@@ -17,7 +17,7 @@ height: 100%;
 
 
 
-.validate, .audio {
+.validate, .icons {
     float: left;
     margin: 20px;
 }
