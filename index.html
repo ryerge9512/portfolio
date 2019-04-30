@@ -233,6 +233,86 @@
 <div class="video"><center><video src="./media.html/Kelly%20Roofing%20Microsoft%20Dynamics%20CRM.mp4" height="315" width="560" controls>Video not supported<track kind= "captions" src = "media.html/subtitle.vtt"/></video></center></div>      
        
       
+	  
+	  
+	  
+	  
+	  
+	<div id="caesarCipher">
+     
+    <form>
+        
+      <h2>The Caesar Cipher!</h2> 
+        <section class="shift">
+          <label for="amount">Select shift quantity (0-26)</label>
+          <input type="number" name="amount" id="amount" min="0" max="26">    
+        </section>
+        
+        
+        <section class="user-input">
+          <label for="string">Please enter characters to be encrypted (a-z)</label>
+          <input type="text" name="string" id="string" required>
+          <input type="button" value="encrypt" required onClick="Cipher()">    
+        </section>
+        
+        <section class="user-output">
+          <label for="mixed">Encryption Output:</label>
+          <input type="text" name="output" id="output">    
+        </section>
+          
+    </form>
+  </div>
+      
+      
+      <!--http://www.practicalcryptography.com/ciphers/caesar-cipher/-->
+      
+      
+  <script>
+      
+     function Cipher() {
+        
+       plaintext = document.getElementById("string").value.toLowerCase(); 
+         
+         if(plaintext.length < 1) { 
+             
+            alert("please enter some plaintext"); 
+            return; 
+             
+           } 
+         
+         
+         var shift = parseInt(document.getElementById("amount").value);
+         ciphertext = "";    
+         var re = /[a-z]/;
+         
+         
+         
+         for(i=0; i<plaintext.length; i++) { 
+             
+           if(re.test(plaintext.charAt(i))) 
+               ciphertext += String.fromCharCode((plaintext.charCodeAt(i) - 97 + shift)%26 + 97); 
+           else ciphertext += plaintext.charAt(i);
+             
+          } 
+         
+       document.getElementById("output").value = ciphertext;
+         
+         
+         
+     } 
+      
+       
+      
+  </script>
+        
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
       
 <h3>Please see my applicable experience and translatable skills below:</h3>
  
